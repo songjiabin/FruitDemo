@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/share_card_top_image_bg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/share_card_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/share_card_top_bg">
+
+        <ImageView
+            android:id="@+id/share_card_top_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/card_default_bg"/>
+
+        <ImageView
+            android:id="@+id/share_card_top_collect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/no_collection"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/share_card_top_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/share_card_top_image"
+            android:layout_margin="20dp"
+
+            android:lineSpacingExtra="5dp"
+            android:text="鲁迅"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/share_card_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/share_card_top_author"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:lineSpacingExtra="5dp"
+            android:text="论薯片"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/share_card_top_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/share_card_top_image"
+            android:background="@color/white_light"
+
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:text="乐事的黄瓜味比上好佳好吃100个可比克"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/share_card_top"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/share_card_bottom_bg">
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:gravity="left|center"
+            android:text="对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对对"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
